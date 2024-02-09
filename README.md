@@ -23,8 +23,7 @@ This Docker-compose configuration sets up an NGINX reverse proxy with a custom c
 6. Update the Dockerfile to specify the path for the NGINX configuration file:
    ```Dockerfile
    FROM nginx:latest
-
-   COPY nginx.conf /etc/nginx/nginx.conf
+   PATH - <Path to your nginx config file>:/etc/nginx/nginx.conf
    ```
 
 7. Once you have your custom configuration ready, start the NGINX reverse proxy using Docker-compose:
